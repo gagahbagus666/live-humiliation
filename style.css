@@ -87,3 +87,37 @@ body {
     margin: 3rem;
 }
 
+.main-container {
+    position: relative;
+    display: grid;
+    grid-template-column: 1fr 1fr 1fr;
+    grid-template-row: 1fr 1fr 1fr;
+    background-color: white;
+    border-radius: 10% 10% 0 0;
+}
+
+.main-container >img {
+    left: 0;
+    right: 100px;
+    position: relative;
+    grid-column: 2/3;
+    top: -100px;
+}
+
+.main-container > .container {
+    grid-column: 1/2;
+    grid-row: 3;
+}
+
+
+#btn {
+    display: grid;
+    grid-column: 3/4;
+    grid-row: 3;
+    background-image: linear-gradient(to left, red, orange);
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+    border-radius: 50%;
+    align-item: center;
+}
